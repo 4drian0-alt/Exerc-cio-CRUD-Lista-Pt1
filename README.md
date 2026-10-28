@@ -1,20 +1,20 @@
 
-# Gerenciador de Lista em JavaScript
+# Exercício CRUD - Lista Encadeada em JavaScript
 
-Este projeto consiste em um menu interativo desenvolvido em JavaScript para manipular elementos de um array.
+## Sobre o projeto
 
-O objetivo é praticar conceitos fundamentais da linguagem, como funções, arrays, estruturas condicionais, laços de repetição e manipulação de elementos.
+Projeto desenvolvido para praticar a criação e a manipulação de uma lista encadeada utilizando JavaScript.
+
+A estrutura permite armazenar elementos em nós conectados por referências, possibilitando percorrer a lista e inserir novos elementos em diferentes posições.
 
 ## Funcionalidades
 
-O programa oferece as seguintes opções:
+- **Listar elementos:** percorre a lista e exibe os dados armazenados.
+- **Inserir no fim:** adiciona um novo elemento ao final da lista.
+- **Inserir em uma posição:** permite adicionar um elemento em uma posição específica.
+- **Sair:** encerra a execução do menu.
 
-- **1 - Listar todos:** percorre o array e exibe todos os elementos.
-- **2 - Inserir no fim:** solicita um número ao usuário e adiciona ao final da lista utilizando `push()`.
-- **3 - Inserir em uma posição:** solicita um número e uma posição para inseri-lo no array utilizando `splice()`.
-- **4 - Sair:** encerra a execução da função para uma opção diferente das operações disponíveis.
-
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - JavaScript
 - Git
@@ -22,48 +22,41 @@ O programa oferece as seguintes opções:
 
 ## Conceitos praticados
 
-- Declaração de variáveis com `const` e `let`.
-- Criação e chamada de funções.
-- Manipulação de arrays.
-- Estrutura condicional `switch`.
-- Laço de repetição `while`.
+- Funções e parâmetros.
+- Objetos em JavaScript.
+- Listas encadeadas.
+- Referências entre nós.
+- Estruturas condicionais (`if` e `switch`).
+- Laços de repetição (`while`).
 - Entrada de dados com `prompt()`.
-- Conversão de valores com `Number()`.
-- Exibição de resultados com `console.log()`.
+- Manipulação de strings.
+- Validação de dados.
+
+## Estrutura da lista
+
+Cada nó possui duas propriedades:
+
+- `dado`: armazena o valor do elemento.
+- `proximo`: aponta para o próximo nó da lista.
+
+Exemplo:
+
+```text
+arroz -> feijão -> farinha -> null
+```
+
+O valor `null` indica que não existe outro nó após o último elemento.
 
 ## Como executar
 
-1. Clone este repositório:
-
-   ```bash
-   git clone https://github.com/4drian0-alt/Exerc-cio-CRUD-Lista-Pt1
-   ```
-
+1. Clone o repositório.
 2. Abra o arquivo JavaScript em um editor de código.
+3. Execute o script no console de um navegador ou em um ambiente compatível com `prompt()` e `alert()`.
+4. Utilize o menu para testar as operações disponíveis.
 
-3. Execute o script em um ambiente que suporte JavaScript e disponibilize as funções `prompt()` e `console.log()`, como o console do navegador.
+## Objetivo
 
-4. Siga as opções apresentadas pelo programa.
-
-## Exemplo de utilização
-
-Lista inicial:
-
-```javascript
-[1, 2, 3, 4, 5]
-```
-
-Ao escolher a opção de inserir no fim e informar `10`, o resultado esperado é:
-
-```javascript
-[1, 2, 3, 4, 5, 10]
-```
-
-Ao escolher a opção de inserir em uma posição, o número será adicionado no índice informado.
-
-##  Objetivo de aprendizagem
-
-Projeto desenvolvido com o objetivo de consolidar conhecimentos iniciais em JavaScript e praticar operações básicas com arrays.
+Consolidar os conhecimentos de JavaScript e compreender o funcionamento de estruturas de dados dinâmicas, especialmente listas encadeadas e suas operações básicas.
 
 ## Autor
 
